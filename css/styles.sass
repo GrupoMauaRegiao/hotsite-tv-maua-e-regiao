@@ -1,0 +1,209 @@
+@import reset.sass
+
+@font-face
+  font-family: Gotham
+  font-weight: normal
+  src: url('../fonts/gothamrnd-light.otf') format("opentype")
+
+body
+  background: url('../imagens/bg-body.jpg') no-repeat
+  background-size: cover
+  font-family: Gotham, cursive
+
+.website
+  background: url('../imagens/bg-circulo.png') no-repeat 515px 80px
+  background-size: 570px auto
+  float: left
+
+  .layout
+    width: 960px
+    margin: 0 auto
+
+    .chamada-publicidade
+      margin: 80px 0 35px 0
+      float: left
+
+      .frase
+        width: 460px
+        height: auto
+        margin: 0 0 0 20px
+        float: left
+
+        h2
+          text-transform: uppercase
+          font-size: 35px
+
+        i
+          font-weight: 900
+          font-style: italic
+
+      .logotipo
+        width: 480px
+        height: 160px
+        background: url('../imagens/logotipo-tv-maua-e-regiao.png') no-repeat 105px bottom
+        float: left
+
+    .formulario
+      float: left
+
+      .tablet
+        width: 480px
+        height: 315px
+        background: url('../imagens/tablet.png') no-repeat 0 bottom
+        float: left
+
+      .o-formulario
+        width: 480px
+        margin: 0 0 0 -35px
+        float: left
+
+        .frase
+          margin: 0 0 50px 0
+
+          h2
+            font-size: 25px
+            text-transform: uppercase
+
+            i
+              font-weight: 900
+              font-style: italic
+
+        form
+          margin: 0 0 0 40px
+
+          label
+            font-size: 20px
+            text-transform: uppercase
+
+          input[type="text"]
+            width: 365px
+            height: 35px
+            color: rgb(0, 0, 0)
+            background: transparent
+            border: 0
+            outline: 0
+            border-bottom: 2px solid rgb(0, 0, 0)
+            border-left: 2px solid rgb(0, 0, 0)
+            margin: 5px 0 20px 0
+            font: 900 20px Gotham, cursive
+            padding: 5px 5px 0 5px
+
+          input[type="submit"]
+            font: 20px Gotham, cursive
+            text-transform: uppercase
+            background: transparent
+            border: 0
+            outline: 0
+            padding: 0
+            margin: 0 0 0 -5px
+            color: rgb(0, 0, 0)
+            cursor: pointer
+
+          input[type="submit"]:hover
+            border-bottom: 1px solid rgb(255, 255, 255)
+
+  .vantagens
+    width: 100%
+    margin: 85px 0 0 0
+    background: rgb(255, 102, 0)
+    color: rgb(255, 255, 255)
+    text-transform: uppercase
+    float: left
+
+    .colunas
+      width: 960px
+      margin: 0 auto
+      padding-left: 25px
+
+      .coluna-moderno,
+      .coluna-bem-pensado,
+      .coluna-rapido
+        margin: 0 50px 0 0
+        float: left
+
+      .coluna-moderno,
+      .coluna-bem-pensado,
+      .coluna-rapido
+        .icone
+          width: 81px
+          height: 81px
+          margin: -3px 10px 15px 0
+          float: left
+
+        .conteudo
+          margin: 10px 0 0 0
+          float: left
+
+          h3
+            font-size: 16px
+            font-weight: 900
+            margin: 0 0 10px 0
+
+          p
+            font-size: 13px
+            text-align: center
+
+      .coluna-moderno
+        .icone
+          background: url('../imagens/logotipo-html5.png') no-repeat
+
+      .coluna-bem-pensado
+        .icone
+          background: url('../imagens/logotipo-feed.png') no-repeat
+
+      .coluna-rapido
+        .icone
+          background: url('../imagens/logotipo-play.png') no-repeat
+
+  .rodape
+    width: 100%
+    height: 81px
+    margin: 30px 0 0 0
+    background: url('../imagens/bg-rodape.png') repeat-x
+    float: left
+
+    .elementos
+      width: 960px
+      font-size: 12px
+      font-weight: 700
+      color: rgb(255, 255, 255)
+      margin: 0 auto
+      margin-top: 25px
+
+      .site
+        width: 440px
+        float: left
+        p
+          a
+            color: rgb(255, 255, 255)
+            text-decoration: none
+            -webkit-transition: all 0.2s linear
+            -moz-transition: all 0.2s linear
+            -ms-transition: all 0.2s linear
+            -o-transition: all 0.2s linear
+            transition: all 0.2s linear
+
+        a:hover
+          color: rgb(200, 200, 200)
+
+      .copyright
+        width: 480px
+        float: left
+
+        .texto
+          p
+            text-align: right
+            padding: 0 20px 0 0
+
+      a
+        border: 0
+        outline: 0
+
+        .logotipo
+          width: 40px
+          height: 40px
+          background: url('../imagens/logotipo-grupo-maua-e-regiao.png') no-repeat
+          background-size: 40px
+          margin-top: -12px
+          float: left
+
