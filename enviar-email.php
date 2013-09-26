@@ -13,7 +13,8 @@
               $quebraLinha = "\n";
             }
 
-            $destinatario = "web@revistamaua.com.br";
+            $destinatario = "marckfree@gmail.com";
+            // $destinatario = "web@revistamaua.com.br";
             $assunto = "TV MAUÁ E REGIÃO - QUERO SER O PRIMEIRO";
             $nome = ucwords($_GET["nome"]);
             $conteudo = 

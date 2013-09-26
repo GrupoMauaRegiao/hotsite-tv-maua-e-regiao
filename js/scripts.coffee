@@ -6,7 +6,7 @@ TVMaua.apps =
     if formulario
       cNome = document.querySelector '#nome'
       cEmail = document.querySelector '#email'
-      # msgSucesso = document.querySelector '.mensagem-sucesso p'
+      msgSucesso = document.querySelector '.mensagem-sucesso'
       botao = document.querySelector '#enviar'
 
       botao.addEventListener 'click', (evt) ->
@@ -23,14 +23,14 @@ TVMaua.apps =
             xhr.onreadystatechange = ->
               if xhr.readyState is 4 and xhr.status is 200
                 formulario.style.display = 'none'
-                # msgSucesso.setAttribute 'class', 'mensagem-sucesso exibe'
+                msgSucesso.setAttribute 'class', 'mensagem-sucesso exibe'
               return
           else
             cEmail.focus()
-            # cEmail.setAttribute 'class', 'erro'
+            cEmail.setAttribute 'class', 'erro'
         else
           cNome.focus()
-          # cNome.setAttribute 'class', 'erro'
+          cNome.setAttribute 'class', 'erro'
         evt.preventDefault()
         return
     return

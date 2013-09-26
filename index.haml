@@ -23,6 +23,10 @@
             .frase
               %h2 Seja o <i>primeiro</i> a ver
 
+            .mensagem-sucesso
+              %p
+                Obrigado!<br> Aguarde novidades em seu e-mail.
+
             %form{:action => "enviar-email.php", :method => "get", :enctype => "multipart/form-data"}
               %label{:for => "nome"} Nome <br>
               %input{:type => "text", :id => "nome"}/
