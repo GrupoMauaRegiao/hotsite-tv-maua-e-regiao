@@ -1,0 +1,14 @@
+{
+  "name": "hotsite-tv-maua-e-regiao",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-contrib-haml": "~0.1.1",
+    "grunt-coffeelint": "~0.0.7",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-jshint": "~0.6.1",
+    "grunt-yui-compressor": "~0.3.0",
+    "grunt-contrib-sass": "~0.4.1"
+  }
+}

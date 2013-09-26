@@ -1,0 +1,59 @@
+!!! 5
+%html
+  %head
+    %meta{:charset => "UTF-8"}/
+    %meta{:name => "keywords", :content => ""}/
+    %meta{:name => "description", :content => ""}/
+    %meta{:name => "author", :content => ""}/
+    %link{:rel => "stylesheet", :href => "css/styles.min.css"}/
+    %title TV Mauá e Região &#8212; WebTV: seja o primeiro a ver
+  %body
+    .layout
+      .chamada-publicidade
+        .frase
+          %h2 Falta pouco para<br> <i>o lançamento</i><br> da webTV<br> Mauá e Região
+
+        .logotipo
+
+      .formulario
+        .frase
+          %h2 Seja o <i>primeiro</i> a ver
+        .o-formulario
+          %form{:action => "enviar-email.php", :method => "get", :enctype => "multipart/form-data"}
+            %label{:for => "nome"} Nome <br>
+            %input{:type => "text", :id => "nome"}/
+            %br/
+            %label{:for => "email"} E-mail <br>
+            %input{:type => "text", :id => "email"}/
+            %br/
+            %input{:type => "submit", :id => "enviar", :value => "Enviar"}/
+
+      .vantagens
+        .coluna-moderno
+          .cabecalho
+            %h3 Moderno
+            %p Todo feito em HTML 5: a<br> última palavra em<br> tecnologia e velocidade
+
+        .coluna-bem-pensado
+          .cabecalho
+            %h3 Bem pensado
+            %p Todo conteúdo é<br> postado diretamente<br> em nosso servidor
+
+        .coluna-rapido
+          .cabecalho
+            %h3 Rápido
+            %p Páginas leves, vídeos<br> curtos, buscas com<br> ultra velocidade
+
+      .rodape
+        .site
+          %p
+            Visite 
+            %a{:href => "http://portalmauaeregiao.com.br", :target => "_blank"} www.portalmauaeregiao.com.br
+
+        .copyright
+          .texto
+            %p &copy; 2013 <i>Grupo Mauá e Região, todos os direitos reservados.</i>
+
+          .logotipo
+
+    %script{:src => "js/scripts.js"}
