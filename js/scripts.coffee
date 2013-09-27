@@ -52,9 +52,9 @@ TVMaua.apps =
 
       # A referência para a animação é o meio da página
       if posicaoEixoX > meioPag
-        _animacao(bg, tempoAnimacao, 20)
-      else if posicaoEixoX < meioPag
         _animacao(bg, tempoAnimacao, -20)
+      else if posicaoEixoX < meioPag
+        _animacao(bg, tempoAnimacao, 20)
 
       return
 

@@ -12,6 +12,7 @@ body
 
 .erro
   border-bottom: 2px solid rgb(255, 95, 95) !important
+  border-left: 2px solid rgb(255, 95, 95) !important
 
 .exibe
   display: block !important
@@ -27,7 +28,7 @@ body
     margin: 0 auto
 
     .chamada-publicidade
-      margin: 80px 0 35px 0
+      margin: 80px 0 5px 0
       float: left
 
       .frase
@@ -56,12 +57,18 @@ body
       .tablet
         width: 480px
         height: 315px
+        position: relative
+        z-index: 9999
         background: url('../imagens/tablet.png') no-repeat 0 bottom
         float: left
 
       .o-formulario
         width: 480px
-        margin: 0 0 0 -35px
+        height: 285px
+        margin: 0 0 0 -60px
+        background: rgba(255, 255, 255, 0.3)
+        padding: 20px 10px 20px 10px
+        border-radius: 0 15px 15px 15px
         float: left
 
         .frase
@@ -76,11 +83,11 @@ body
               font-style: italic
 
         .mensagem-sucesso
-          margin: 0 0 0 -70px
+          margin: 0
           display: none
 
           p
-            font-size: 24px
+            font-size: 20px
             font-weight: 900
             text-transform: uppercase
 
@@ -103,15 +110,21 @@ body
             margin: 5px 0 20px 0
             font: 900 20px Gotham, cursive
             padding: 5px 5px 0 5px
+            -webkit-transition: all 0.3s linear
+            -moz-transition: all 0.3s linear
+            -ms-transition: all 0.3s linear
+            -o-transition: all 0.3s linear
+            transition: all 0.3s linear
 
           input[type="button"]
             font: 20px Gotham, cursive
             text-transform: uppercase
             background: transparent
             border: 0
+            border-bottom: 1px solid transparent
             outline: 0
             padding: 0
-            margin: 0 0 0 -5px
+            margin: 10px 0 0 -5px
             color: rgb(0, 0, 0)
             cursor: pointer
 
