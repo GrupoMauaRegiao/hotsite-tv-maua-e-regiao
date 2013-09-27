@@ -34,7 +34,35 @@ TVMaua.apps =
         evt.preventDefault()
         return
     return
+
+  animarBg: ->
+    bg = document.querySelector 'body'
+
+    _controlarAnimacao = (evt) ->
+      posicaoEixoX = evt.pageX
+      meioPag = screen.width / 2
+      tempoAnimacao = 0.5
+
+      _animacao = (elemento, tempo, posicao) ->
+        TweenLite.to(elemento, tempo, {
+          css:
+            backgroundPosition: (posicao) + 'px'
+        })
+        return
+
+      # A referência para a animação é o meio da página
+      if posicaoEixoX > meioPag
+        _animacao(bg, tempoAnimacao, 20)
+      else if posicaoEixoX < meioPag
+        _animacao(bg, tempoAnimacao, -20)
+
+      return
+
+    bg.addEventListener 'mousemove', _controlarAnimacao
+    return
+
 Apps = TVMaua.apps
 window.onload = ->
   Apps.enviarEmail()
+  Apps.animarBg()
   return
