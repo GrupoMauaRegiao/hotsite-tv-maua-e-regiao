@@ -48,7 +48,7 @@ function enviarEmailsCriarListas($email, $nome, $arqEmails, $arqNomes) {
 }
 
 $path = '/home/marc11/public_html/hot-tv/';
-criarListaEmails(
+enviarEmailsCriarListas(
   strtolower($_GET["email"]),
   $_GET["nome"],
   $path . "lista-de-emails.txt",
