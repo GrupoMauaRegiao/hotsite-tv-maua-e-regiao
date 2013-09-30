@@ -50,8 +50,8 @@ $path = '/home/tvmaua/public_html/';
 enviarEmailsCriarListas(
   strtolower($_GET["email"]),
   $_GET["nome"],
-  $path . "lista-de-emails.txt",
-  $path . "lista-de-nomes.txt"
+  $path . "lista-de-emails",
+  $path . "lista-de-nomes"
 );
 
 ?>

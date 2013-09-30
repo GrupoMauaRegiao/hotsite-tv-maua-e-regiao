@@ -41,20 +41,20 @@ TVMaua.apps =
     _controlarAnimacao = (evt) ->
       posicaoEixoX = evt.pageX
       meioPag = screen.width / 2
-      tempoAnimacao = 0.5
+      tempoAnimacao = 0.3
 
       _animacao = (elemento, tempo, posicao) ->
         TweenLite.to(elemento, tempo, {
           css:
-            backgroundPosition: (posicao) + 'px'
+            backgroundPosition: (posicao) + 'px 0, 0 0'
         })
         return
 
       # A referência para a animação é o meio da página
       if posicaoEixoX > meioPag
-        _animacao(bg, tempoAnimacao, -20)
+        _animacao(bg, tempoAnimacao, -30)
       else if posicaoEixoX < meioPag
-        _animacao(bg, tempoAnimacao, 20)
+        _animacao(bg, tempoAnimacao, 30)
 
       return
 
